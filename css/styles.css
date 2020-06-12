@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* font-family: 'Oswald', sans-serif; */
+.hero {
+  background-image: linear-gradient(rgba(102,51,0,0.60), rgba(153, 102,51,0.2), url(..
+  /img/mister-rogers-neighbors-900x600-102-min1.jpg);
+}
