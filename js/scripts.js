@@ -19,9 +19,6 @@ $(document).ready(function() {
         outputArray.push(i);
       }
     }
-  
-
-
       $("ul#output").text(outputArray.join(", "));
   });
 });
