@@ -1,16 +1,21 @@
 //Your face logic
 $(document).ready(function() {
-  $("#form-one").submit(function(event) {
+  
+  $("button#button2").click(function(event) {
+    event.preventDefault();
+    let reverseNumber = $("input#number").val();
+    $("#output").text(neighbor(reverseNumber).reverse().join(", "));
+  });
+  
+  $("form#form-one").submit(function(event) {
     event.preventDefault();
     let number = $("input#number").val();
-    let mad= neighbor(number);
-    $("#output").text(mad.join(", "));  
-  });  
-});
+    $("#output").text(neighbor(number).join(", "));
 
-  $("button#reverse").click(function() {
+  });  
+
   
-    $("#output").append("<li>BABY</li>");
+
 });
 
 
