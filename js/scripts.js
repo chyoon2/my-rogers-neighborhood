@@ -6,13 +6,13 @@ $(document).ready(function() {
     let outputArray = [];
    
     for (i = 0; i <= number; i++) {
-      if (i === 1) {
+      if (i.toString().includes(1)) {
         outputArray.push("Beep!");
       }
-      else if (i === 2) {
+      else if (i.toString().includes(2)) {
         outputArray.push("Boop!");
       }
-      else if (i === 3) {
+      else if (i.toString().includes(3)) {
         outputArray.push("Won't you be my neighbor!");
       }
       else {
