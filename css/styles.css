@@ -1,31 +1,38 @@
 @charset "utf-8";
-/* font-family: 'Oswald', sans-serif; */
-/* .hero {
-  background-image: linear-gradient(rgba(102,51,0,0.60), rgba(153, 102,51,0.2), url(..
-  /img/mister-rogers-neighbors-900x600-102-min1.jpg);
-} */
 
-
-h1{
-  position: relative; 
-
-  color: wheat;
-z-index: 1;
+@font-face{
+  font-family: bookman;
+  src:url("../css/bookman.ttf");
 }
-#form-one {
-  position: relative; 
 
-  
+body {font-family: bookman;}
+h1{
+  text-align: center;
+  font-size: 90px;
+  position: relative; 
   color: wheat;
   z-index: 1;
 }
-
+#form-one {
+  position: relative; 
+  color: wheat;
+  z-index: 1;
+  padding-top: 20px;
+}
+ul#output {
+  position: relative;
+  font-size: 20px;
+  color: wheat;
+  z-index: 3;
+  padding-top: 20px;
+}
 #bg {
   position: fixed; 
   top: -50%; 
   left: -50%; 
   width: 200%; 
   height: 200%;
+  z-index=0;
 
 }
 #bg img {
@@ -37,4 +44,5 @@ z-index: 1;
   margin: auto; 
   min-width: 50%;
   min-height: 50%;
-}
+  z-index: 0;
+} 
