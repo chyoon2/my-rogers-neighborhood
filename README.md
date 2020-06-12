@@ -1,27 +1,23 @@
 **Behavior:** The program returns a range of numbers from 0 to user inputted number.
-* input: "4"
-* output: "0, 1, 2, 3, 4"
+* input: 4
+* output: 0, 1, 2, 3, 4
 
-**Behavior:** User inputted numbers that contain a 1: all digits are replaced with "Beep!"
-* input: "61"
-* output: "Beep"
+**Behavior:** Numbers being returned that contain a 1: the integer is replaced with "Beep!".
+* input: 5
+* output: 0, "Beep!", 2, 3, 4, 5
 
-**Behavior:** User inputted numbers that contain a 2: all digits are replaced with "Boop!"
-* input: 20
-* output: "Boop"
+**Behavior:** Numbers being returned that contain a 2: the integer is replaced with "Boop!".
+* input: 5
+* output: 0, "Beep!", "Boop!", 3, 4, 5
 
-**Behavior:** User inputted numbers that contain a 3: all digits are replaced with "Won't you be my neighbor?"
-* input: 30
-* output: ""Won't you be my neighbor?"
+**Behavior:** Numbers being returned that contain a 3: the integer is replaced with "Won't you be my neighbor?"
+* input: 5
+* output: 0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5
 
-**Behavior:** 
-* input:
-* output:
+**Behavior:** The behavior applied to the number 2, overrides the behavior applied to the number 1.
+* input: 12
+* output: ...9, "Beep!", "Beep!", "Boop"
 
-**Behavior:** 
-* input:
-* output:
-
-**Behavior:** 
-* input:
-* output:
+**Behavior:** The behavior applied to the number 3, overrides the behavior applied to the number 2 & 1.
+* input: 13
+* output: ...9, "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?".
