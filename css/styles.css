@@ -5,6 +5,13 @@
   /img/mister-rogers-neighbors-900x600-102-min1.jpg);
 } */
 
+.container {
+  position: relative
+}
+#form-one {
+  position: absolute;
+}
+
 #bg {
   position: fixed; 
   top: -50%; 
