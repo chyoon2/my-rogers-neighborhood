@@ -1,4 +1,5 @@
-//Your face logic
+//User interface logic
+
 $(document).ready(function() {
   $("button#button2").click(function(event) {
     event.preventDefault();
@@ -14,6 +15,8 @@ $(document).ready(function() {
     $("#output").text(neighbor(number).join(", ").concat(" Thank you "+ name.toUpperCase()));
   });  
 });
+
+//Business logic
 function neighbor(value) {
   let outputArray = [];
   for (i = 0; i <= value; i++) {
