@@ -1,22 +1,5 @@
-//User interface logic
-
-$(document).ready(function() {
-  $("button#button2").click(function(event) {
-    event.preventDefault();
-    let name = $("input#name").val();
-    let reverseNumber = $("input#number").val();
-    $("#output").text(neighbor(reverseNumber).reverse().join(", ").concat(" Thank you "+ name.toUpperCase()));
-
-  });
-  $("form#form-one").submit(function(event) {
-    event.preventDefault();
-    let name = $("input#name").val();
-    let number = $("input#number").val();
-    $("#output").text(neighbor(number).join(", ").concat(" Thank you "+ name.toUpperCase()));
-  });  
-});
-
 //Business logic
+
 function neighbor(value) {
   let outputArray = [];
   for (i = 0; i <= value; i++) {
@@ -36,4 +19,23 @@ function neighbor(value) {
   return outputArray;
 }  
 
+//User interface logic
 
+$(document).ready(function() {
+  $("button#button2").click(function(event) {
+    event.preventDefault();
+    let name = $("input#name").val();
+    let reverseNumber = $("input#number").val();
+    $("#output").text(neighbor(reverseNumber).reverse().join(", ").concat(" Thank you "+ name.toUpperCase()));
+  });
+  $("form#form-one").submit(function(event) {
+    event.preventDefault();
+    let name = $("input#name").val();
+    let number = $("input#number").val();
+    $("#output").text(neighbor(number).join(", ").concat(" Thank you "+ name.toUpperCase()));
+  });
+    $("button#button3").click(function(){
+      console.dir(output)
+      $(output.lastChild).remove();
+  });  
+});
